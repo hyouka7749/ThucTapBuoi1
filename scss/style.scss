@@ -57,7 +57,8 @@ body {
 
     #imagePreview {
         text-align: center;
-        min-height: 200px;
+        width: 300px; 
+        height: 300px; 
         display: flex;
         align-items: center;
         justify-content: center;
@@ -66,24 +67,25 @@ body {
         border: 1px dashed $border-color;
         overflow: hidden;
         transition: all 0.3s ease;
-
+    
         .preview-placeholder {
             color: #6c757d;
-
+    
             i {
                 display: block;
                 margin-bottom: 10px;
             }
         }
-
+    
         #preview {
+            width: auto;
+            height: 100%;
             max-width: 100%;
-            max-height: 300px;
             object-fit: contain;
             border-radius: 5px;
             box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s ease;
-
+    
             &:hover {
                 transform: scale(1.03);
             }
